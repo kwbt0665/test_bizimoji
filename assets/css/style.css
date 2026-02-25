@@ -1471,6 +1471,12 @@ footer .copy {
   max-width: 600px;
   width: 90%;
   top: 4rem;
+  padding: 0;
+}
+@media (max-width: 540px) {
+  .modal-body {
+    width: 95%;
+  }
 }
 
 /*モーダルを閉じるボタンの指定*/
@@ -1486,6 +1492,12 @@ footer .copy {
   font-size: 40px;
   color: #fff;
   cursor: pointer;
+}
+@media (max-width: 540px) {
+  .modal-close {
+    top: -42px;
+    right: -10px;
+  }
 }
 
 /*モーダル内のコンテンツの指定*/
