@@ -941,7 +941,7 @@ footer .copy {
 }
 .hero .hero_sp .hero_sp_top {
   background-image: url(../img/hero_bg_sp.jpg);
-  background-position: left 80% bottom;
+  background-position: left 50% bottom;
   background-size: cover;
   padding: 60px 24px 20px 24px;
 }
