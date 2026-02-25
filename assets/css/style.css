@@ -603,6 +603,11 @@ footer .ftCmn_menu {
   background-color: #7679c4;
   padding: 70px 0 90px;
 }
+@media (max-width: 1062px) {
+  footer .ftCmn_menu {
+    padding: 70px 0 50px;
+  }
+}
 @media (max-width: 767px) {
   footer .ftCmn_menu {
     padding: 40px 0;
@@ -1485,8 +1490,8 @@ footer .copy {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -20px;
-  right: -20px;
+  top: -40px;
+  right: -10px;
   width: 40px;
   height: 40px;
   font-size: 40px;
@@ -1584,7 +1589,7 @@ footer .copy {
   flex-wrap: wrap;
   gap: 90px;
 }
-@media (max-width: 1062px) {
+@media (max-width: 1240px) {
   .variety_sec .variety_box .variety_list {
     justify-content: center;
   }
