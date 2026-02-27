@@ -11,6 +11,7 @@
 
 		gtag('config', 'G-2T8357QYMC');
 	</script>
+	<meta name="robots" content="noindex">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,6 +39,8 @@
 	<link href="assets/css/block-grid.css" rel="stylesheet" type="text/css">
 	<!-- Swiper -->
 	<link href="assets/css/swiper.min.css" rel="stylesheet" type="text/css">
+	<!-- Fancybox -->
+	<link href="assets/css/fancybox.css" rel="stylesheet" type="text/css">
 	<!-- Custom styles -->
 	<link href="assets/css/style.css?v=15" rel="stylesheet">
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -312,7 +315,7 @@
 										<li>「ビジ文字素材」「印刷シート」の公開や「印刷シート」のSNS共有機能</li>
 									</ul>
 									<ul>
-										<li style="list-style-type: '※ '; margin-top: 10px;">印刷シートの作成についての注意点については<a href="https://cvs-moji.net/caution_sheet.html"><span style="color:red;">こちら</span></a>をご覧ください</li>
+										<li style="list-style-type: '※ '; margin-top: 10px;">印刷シートの作成についての注意点については<a href="https://cvs-moji.net/caution_sheet.html"><u style="color:red;">こちら</u></a>をご覧ください</li>
 									</ul>
 								</div>
 							</div>
@@ -328,7 +331,7 @@
 										公開シートを見る、<br>プリントする
 									</h2>
 									<p>
-										第三者が作成し、公開したビジ文字素材を使って印刷シートを作ったり、出来上がった印刷シート（コンビニプリント番号付き）を公開して他のユーザにプリントしてもらうことができます。<br>公開データ機能の詳細については<a href="opendata_feature.html"><u style="color:red;">こちらをご覧ください。</u></a>
+										第三者が作成し、公開したビジ文字素材を使って印刷シートを作ったり、出来上がった印刷シート（コンビニプリント番号付き）を公開して他のユーザにプリントしてもらうことができます。<br>公開データ機能の詳細については<a href="opendata_feature.html"><u style="color:red;">こちら</u></a>をご覧ください。
 									</p>
 								</div>
 							</div>
@@ -370,7 +373,7 @@
 					<li>「ビジ文字素材」「印刷シート」の公開や「印刷シート」のSNS共有機能</li>
 				</ul>
 				<ul>
-					<li style="list-style-type: '※ '; margin-top: 10px;">印刷シートの作成についての注意点については<a href="https://cvs-moji.net/caution_sheet.html"><span style="color:red;">こちら</span></a>をご覧ください</li>
+					<li style="list-style-type: '※ '; margin-top: 10px;">印刷シートの作成についての注意点については<a href="https://cvs-moji.net/caution_sheet.html"><u style="color:red;">こちら</u></a>をご覧ください</li>
 				</ul>
 			</div>
 			<div class="feature_top_box box03">
@@ -379,7 +382,7 @@
 					<img src="./assets/img/img_carousel_koukai_sp.jpg" alt="公開シートを見る、プリントする">
 				</div>
 				<p>
-					第三者が作成し、公開したビジ文字素材を使って印刷シートを作ったり、出来上がった印刷シート（コンビニプリント番号付き）を公開して他のユーザにプリントしてもらうことができます。<br>公開データ機能の詳細については<a href="opendata_feature.html"><u style="color:red;">こちらをご覧ください。</u></a>
+					第三者が作成し、公開したビジ文字素材を使って印刷シートを作ったり、出来上がった印刷シート（コンビニプリント番号付き）を公開して他のユーザにプリントしてもらうことができます。<br>公開データ機能の詳細については<a href="opendata_feature.html"><u style="color:red;">こちら</u></a>をご覧ください。
 				</p>
 			</div>
 		</section>
@@ -399,17 +402,10 @@
 						<img src="./assets/img/logo.svg" alt="コンビニビジ文字プリント">
 					</div>
 					<!-- modal -->
-					 <div class="table_btn">他サービス よくわかる比較表</div>
-						<div class="modal-container">
-							<div class="modal-body">
-								<!-- close button -->
-								<div class="modal-close">×</div>
-								<!-- contents -->
-								<div class="modal-content">
-									<img src="./assets/img/img_hikakuhyo.png" alt="他サービス よくわかる比較表">
-								</div>
-							</div>
-						</div>
+					<div id="dialog-content" style="display: none; max-width: 800px;">
+						<img src="./assets/img/img_hikakuhyo.png" alt="他サービス よくわかる比較表">
+					</div>
+					<div id="triggger" class="table_btn">他サービス よくわかる比較表</div>
 				</li>
 			</ul>
 		</section>
@@ -422,38 +418,38 @@
 				<ul class="variety_list">
 					<li>
 						<h3>デコ素材</h3>
-						<img class="br_pc" src="./assets/img/img_kinou_pukkuri_pc.png" alt="デコ素材">
-						<img class="br_sp" src="./assets/img/img_kinou_pukkuri_sp.png" alt="デコ素材">
+						<img class="only_pc" src="./assets/img/img_kinou_pukkuri_pc.png" alt="デコ素材">
+						<img class="only_sp" src="./assets/img/img_kinou_pukkuri_sp.png" alt="デコ素材">
 						<p>メッセージを華やかにするデコ素材は 総数1000以上！デコ素材とは別に ぷっくり文字のスタンプが 総数250以上！応援うちわをもっと目立つように盛れる！</p>
 					</li>
 					<li>
 						<h3>アーチ文字</h3>
-						<img class="br_pc" src="./assets/img/img_kinou_arch_pc.png" alt="アーチ文字">
-						<img class="br_sp" src="./assets/img/img_kinou_arch_sp.png" alt="アーチ文字">
+						<img class="only_pc" src="./assets/img/img_kinou_arch_pc.png" alt="アーチ文字">
+						<img class="only_sp" src="./assets/img/img_kinou_arch_sp.png" alt="アーチ文字">
 						<p>アーチ文字を一つの素材として作成すればうちわのカーブにあわせて ひとことメッセージを配置できる！アーチ文字は最大20字まで編集可能です。</p>
 					</li>
 					<li>
 						<h3>絵柄文字</h3>
-						<img class="br_pc" src="./assets/img/img_kinou_egara_pc.png" alt="絵柄文字">
-						<img class="br_sp" src="./assets/img/img_kinou_egara_sp.png" alt="絵柄文字">
+						<img class="only_pc" src="./assets/img/img_kinou_egara_pc.png" alt="絵柄文字">
+						<img class="only_sp" src="./assets/img/img_kinou_egara_sp.png" alt="絵柄文字">
 						<p>文字を素敵な柄で彩り。えらべる柄も100以上で 目立つ縁取り色指定とセットにしてご用意しています。絵柄文字でインパクトのある1文字を作って目立つうちわに！もちろん、最大10文字までの 複数文字 一体型の絵柄文字も作れます。</p>
 					</li>
 					<li>
 						<h3>画像合成文字</h3>
-						<img class="br_pc" src="./assets/img/img_kinou_gousei_pc.png" alt="画像合成文字">
-						<img class="br_sp" src="./assets/img/img_kinou_gousei_sp.png" alt="画像合成文字">
+						<img class="only_pc" src="./assets/img/img_kinou_gousei_pc.png" alt="画像合成文字">
+						<img class="only_sp" src="./assets/img/img_kinou_gousei_sp.png" alt="画像合成文字">
 						<p>スマホの写真を文字型に切り抜いた 画像合成文字も作成可能！推しの写真も文字にしてアピールできる！</p>
 					</li>
 					<li>
 						<h3>応援ボード背景</h3>
-						<img class="br_pc" src="./assets/img/img_kinou_ouenboard_pc.png" alt="応援ボード背景">
-						<img class="br_sp" src="./assets/img/img_kinou_ouenboard_sp.png" alt="応援ボード背景">
+						<img class="only_pc" src="./assets/img/img_kinou_ouenboard_pc.png" alt="応援ボード背景">
+						<img class="only_sp" src="./assets/img/img_kinou_ouenboard_sp.png" alt="応援ボード背景">
 						<p>A3全面印刷に対応できる高解像の応援ボード背景用画像を100種類以上ご用意しています。応援ボードだけでなく、うちわの背景にも利用できます。</p>
 					</li>
 					<li>
 						<h3>背景除去</h3>
-						<img class="br_pc" src="./assets/img/img_kinou_haikeijokyo_pc.png" alt="背景除去">
-						<img class="br_sp" src="./assets/img/img_kinou_haikeijokyo_sp.png" alt="背景除去">
+						<img class="only_pc" src="./assets/img/img_kinou_haikeijokyo_pc.png" alt="背景除去">
+						<img class="only_sp" src="./assets/img/img_kinou_haikeijokyo_sp.png" alt="背景除去">
 						<p>スマホの写真から背景を除去する機能を搭載しています。背景除去の利用に会員登録などを行う必要もありません！背景を除去した状態に縁取りを付けることも可能です。</p>
 					</li>
 				</ul>
@@ -594,7 +590,7 @@
 				<h1>お知らせ</h1>
 				<a class="information" href="https://www.bizicard.net/bizimoji/announce?id=6889aa70e992453dca52a629" target="_blank">
 					<dl class="list-first">
-						<dt style="">2025.07.30</dt>
+						<dt>2025.07.30</dt>
 						<dd style="font-weight: 600;text-decoration: underline;">【ビジ文字プリントアプリ】印刷シート用の背景をご用意しました！
 						</dd>
 					</dl>
@@ -602,7 +598,7 @@
 				
 				<a class="information" href="https://www.bizicard.net/bizimoji/announce?id=680aeba9e992453dca4942b9" target="_blank">
 					<dl class="list-first">
-						<dt style="">2025.05.01</dt>
+						<dt>2025.05.01</dt>
 						<dd style="	color: red;font-weight: 600;text-decoration: underline;">【重要】ビジ文字素材データ保存期間変更についてのお知らせ</dd>
 					</dl>
 				</a>
@@ -610,14 +606,10 @@
 				<!-- お知らせ -->
 				<a class="information" href="https://www.bizicard.net/bizimoji/announce?id=67a2d08be992453dca42094e" target="_blank">
 					<dl class="list-first">
-						<dt style="">2025.02.10</dt>
+						<dt>2025.02.10</dt>
 						<dd style="	color: red;font-weight: 600;text-decoration: underline;">【重要】印刷データ保存期間変更についてのお知らせ</dd>
 					</dl>
 				</a>
-
-				<div class="article">
-					<a href="archive.html">記事一覧はこちら</a>
-				</div>
 			</div>
 		</section>
 
@@ -661,10 +653,10 @@
 				<h1>作成動画</h1>
 				<ul>
 					<li>
-						<iframe class="movie_size" src="https://www.youtube.com/embed/E50_PPLs_9U?si=EN_KLW3fReSrmxaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe class="movie_size" src="https://www.youtube.com/embed/dr09jfSruSc?si=EN_KLW3fReSrmxaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</li>
 					<li>
-						<iframe class="movie_size" src="https://www.youtube.com/embed/NssP08wG2go?si=jIkLT4MviBElfh6Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe class="movie_size" src="https://www.youtube.com/embed/SSMhXa4LPOU?si=jIkLT4MviBElfh6Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</li>
 				</ul>
 			</div>
@@ -750,7 +742,7 @@
 						<nav>
 							<div class="ftCmn_menu_sns">
 								<ul>
-									<li><a href="#" target="_blank"><img
+									<li><a href="https://www.tiktok.com/@bijimoji_print" target="_blank"><img
 												src="assets/img/icon_sns_tiktok.svg" alt="tiktok"></a></li>
 									<li><a href="https://www.facebook.com/bizicard/" target="_blank"><img
 												src="assets/img/icon_sns_fb.svg" alt="facebook"></a></li>
@@ -784,8 +776,10 @@
 	<script src="assets/js/smoothScroll.js"></script>
 	<!-- Swiper -->
 	<script src="assets/js/swiper.min.js"></script>
+	<!-- Fancybox -->
+	<script src="assets/js/fancybox.umd.js"></script>
 	<!-- Settings -->
-	<script src="assets/js/settings.js?v=20201021"></script>
+	<script src="assets/js/settings.js?v=20260226"></script>
 
 	<script type="text/javascript">
 		$(function () {
