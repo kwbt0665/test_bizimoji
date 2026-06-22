@@ -1290,6 +1290,11 @@ footer .copy {
     padding: 0 60px;
   }
 }
+@media (max-width: 540px) {
+  .recommend_sec {
+    padding: 0 24px;
+  }
+}
 .recommend_sec .recommend_box {
   margin: 90px auto 110px;
   max-width: 1200px;
@@ -1310,7 +1315,7 @@ footer .copy {
 @media (max-width: 540px) {
   .recommend_sec .recommend_box {
     margin: 150px auto 70px;
-    padding: 0 24px;
+    padding: 0 0;
   }
 }
 .recommend_sec .recommend_box h2 {
@@ -4292,6 +4297,7 @@ footer .copy {
 }
 .normal_btn a {
   color: #fff;
+  display: block;
 }
 @media (max-width: 1240px) {
   .normal_btn {
@@ -4312,11 +4318,6 @@ footer .copy {
 /* -------- Fancybox modal 調整 -------- */
 .f-carousel__toolbar {
   display: none !important;
-}
-
-.f-panzoom__wrapper img {
-  max-width: 80vw;
-  max-height: 80vh;
 }
 
 .f-caption {
